@@ -41,11 +41,10 @@
 
         <section class="section" id="tentang">
             <h2 class="section-title">Tentang Saya</h2>
-
             <div class="tentang-container">
                 <div class="deskripsi">
                     <p>
-                        Saya adalah mahasiswi teknik informatika kelas C angkatan 2025 di Universitas Riau
+                        Saya adalah mahasiswi teknik informatika kelas C angkatan 2025 di Universitas Riau.
                     </p>
                 </div>
 
@@ -64,7 +63,6 @@
 
         <section class="section" id="proyek">
             <h2 class="section-title">Kemampuan Saya</h2>
-
             <div class="proyek-container">
                 <article class="proyek-card">
                     <img
@@ -95,6 +93,49 @@
                     <h3>JavaScript</h3>
                     <p>Kemampuan untuk menambah interaksi antarmuka pada website</p>
                 </article>
+            </div>
+        </section>
+
+        <section class="section" id="kontak">
+            <h2 class="section-title">Kontak</h2>
+            <div class="kontak-container">
+                <form id="form-kontak" class="form-kontak">
+                    <label for="nama">Nama</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Masukkan nama"
+                        required
+                    >
+
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Masukkan email"
+                        required
+                    >
+
+                    <label for="pesan">Pesan</label>
+                    <textarea
+                        id="pesan"
+                        name="pesan"
+                        placeholder="Tulis pesan kamu"
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="btn">Kirim</button>
+                    <p id="status-form" aria-live="polite"></p>
+                </form>
+
+                <aside class="info-kontak">
+                    <h3>Informasi Kontak</h3>
+                    <p>Email: nurcahyani4584@student.unri.ac.id</p>
+                    <p>Instagram: @nurch.yn_</p>
+                    <p>GitHub: Nurcahyani-N</p>
+                </aside>
             </div>
         </section>
 
