@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff5f8;
+    color: #593747;
+    line-height: 1.7;
+}
+
+.navbar {
+    width: 100%;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 3px 15px rgba(190, 90, 130, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    color: #c84f83;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: #70495b;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #d94f91;
+}
+
+.btn-tema {
+    padding: 9px 18px;
+    background-color: #f9d5e3;
+    color: #a6376b;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-tema:hover {
+    background-color: #edb4ce;
+    transform: translateY(-2px);
+}
+
+.hero {
+    min-height: 570px;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #ffe4ed, #f8c8dc, #fceaf1);
+}
+
+.foto-profil {
+    width: 175px;
+    height: 175px;
+    margin-bottom: 25px;
+    border: 6px solid #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(181, 77, 120, 0.2);
+}
+
+.foto-profil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+    color: #a6386b;
+    font-size: 42px;
+    line-height: 1.3;
+}
+
+.subjudul {
+    margin-bottom: 25px;
+    color: #795366;
+    font-size: 17px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #d95791;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b83d75;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(184, 61, 117, 0.2);
+}
+
+.section {
+    padding: 80px 8%;
+    border: #c84f83 solid 1pt;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    color: #b83d75;
+    font-size: 30px;
+    text-align: center;
+}
+
+.tentang-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: #ffffff;
+    border: 1px solid #f7d8e4;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(190, 90, 130, 0.08);
+}
+
+.deskripsi {
+    width: 100%;
+    text-align: center;
+}
+
+.deskripsi p {
+    font-size: 16px;
+}
+
+.proyek-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.proyek-card {
+    padding: 30px 22px;
+    background-color: #ffffff;
+    border: 1px solid #f4d5e1;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(190, 90, 130, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyek-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(190, 90, 130, 0.15);
+}
+
+.gambar-kemampuan {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.proyek-card h3 {
+    margin-bottom: 10px;
+    color: #c84f83;
+    font-size: 21px;
+}
+
+.proyek-card p {
+    color: #795f6c;
+    font-size: 14px;
+}
+
+.kontak-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.form-kontak,
+.info-kontak {
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #f4d5e1;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(190, 90, 130, 0.08);
+}
+
+.form-kontak {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-kontak label {
+    margin-bottom: 7px;
+    color: #8d4667;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-kontak input,
+.form-kontak textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 13px 15px;
+    background-color: #fff8fb;
+    color: #593747;
+    border: 1px solid #edcada;
+    border-radius: 10px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-kontak input:focus,
+.form-kontak textarea:focus {
+    border-color: #d95791;
+    box-shadow: 0 0 0 3px rgba(217, 87, 145, 0.12);
+}
+
+.form-kontak textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.form-kontak button {
+    align-self: flex-start;
+}
+
+.info-kontak h3 {
+    margin-bottom: 20px;
+    color: #c84f83;
+    font-size: 21px;
+}
+
+.info-kontak p {
+    margin-bottom: 15px;
+    overflow-wrap: anywhere;
+    color: #795f6c;
+    font-size: 14px;
+}
+
+#status-form {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+footer {
+    padding: 25px 15px;
+    background-color: #f3c6d9;
+    color: #82445f;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .nav-menu a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .subjudul {
+        font-size: 15px;
+    }
+
+    .section {
+        padding: 60px 6%;
+    }
+
+    .section-title {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .tentang-container {
+        padding: 25px 20px;
+    }
+
+    .proyek-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .proyek-card {
+        padding: 25px 15px;
+    }
+
+    .kontak-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu {
+        gap: 10px 14px;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+    }
+
+    .btn-tema {
+        padding: 7px 14px;
+        font-size: 12px;
+    }
+
+    .foto-profil {
+        width: 145px;
+        height: 145px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .section {
+        padding: 50px 5%;
+    }
+
+    .proyek-container {
+        grid-template-columns: 1fr;
+    }
+
+    .proyek-card {
+        padding: 30px 20px;
+    }
+
+    .form-kontak,
+    .info-kontak {
+        padding: 22px;
+    }
+}
